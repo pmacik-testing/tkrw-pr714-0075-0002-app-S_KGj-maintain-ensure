@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-hidq
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0002-tenant/tkrw-pr714-0075-0002-app/devfile-sample-hidq@sha256:c89c12154facdfc062c319716e629b88fdb6fa8b58e53e8ff6ad90ab444d7497
+        name: my-nodejs
+        resources: {}
+status: {}
